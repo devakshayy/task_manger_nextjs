@@ -1,4 +1,3 @@
-// pages/api/test.js
 import clientPromise from '../../lib/mongodb';
 
 export default async function handler(req, res) {
@@ -6,7 +5,6 @@ export default async function handler(req, res) {
     const client = await clientPromise;
     const db = client.db('task-manager');
 
-    // Read documents from the "tasks" collection
     const tasks = await db.collection('tasks').find({}).toArray();
 
     res.status(200).json({

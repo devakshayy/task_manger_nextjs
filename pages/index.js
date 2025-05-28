@@ -66,7 +66,6 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4 py-8">
 
-        {/* heading!!! */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border border-gray-100">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
@@ -85,7 +84,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* filter section */}
         
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border border-gray-100">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -124,11 +122,6 @@ export default function Home() {
 
         {filteredTasks.length === 0 ? ( 
           <div className="bg-white rounded-xl shadow-lg p-[25px] text-center border border-gray-100">
-            <div className="text-gray-400 mb-4">
-              <svg className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-              </svg>
-            </div>
             <h3 className="text-xl font-semibold text-gray-700 mb-2">No tasks found</h3>
             <p className="text-gray-500">
                 You don't have any tasks yet. Create your first task to get started!
@@ -141,7 +134,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl shadow-lg hover:shadow-xl border border-gray-100 p-[24px] cursor-pointer transform hover:-translate-y-1 transition-all duration-200 group">
                   <div className="flex items-start justify-between mb-[16px]">
                     <h3 className="text-lg font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors duration-200 line-clamp-2">
-                      {task.title}
+                        <span className="capitalize">{task.title}</span>
                     </h3>
                      <FontAwesomeIcon className="text-gray-800 group-hover:text-indigo-600 transition-colors duration-200 " icon={faAngleRight} />
                   </div>

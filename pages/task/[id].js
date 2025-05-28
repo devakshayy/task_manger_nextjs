@@ -46,7 +46,7 @@ export default function TaskDetail() {
       <div className="max-w-[600px] mx-auto">
         <div className="bg-white rounded-2xl shadow-xl p-[30px] border border-gray-100">
           <h1 className="text-4xl capitalize font-bold text-gray-800 mb-[30px] bg-indigo-600  bg-clip-text text-transparent">
-            {data.task.title}
+            {data.task.title}  
           </h1>
           
           <div className="space-y-[20px]">
