@@ -160,3 +160,12 @@ export default function Home() {
     </div>
   );
 }
+
+
+// WORK FLOW
+// typeDefs.js and resolver.js  
+// in my resolver.js import mongoBb
+// import both typeDefs and resolver.js in graphql.js
+// in the api folder ---> graphql.js we import the apollo server
+
+// now we can query each needed query in the component and use the need data
