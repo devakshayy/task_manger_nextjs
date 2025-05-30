@@ -169,3 +169,6 @@ export default function Home() {
 // in the api folder ---> graphql.js we import the apollo server
 
 // now we can query each needed query in the component and use the need data
+
+
+
